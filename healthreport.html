@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Health Report</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="healthreport.css">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="Welcome-navigation">
+            <!-- Website Logo -->
+            <div class="Welcome-logo">
+                <img src="./Images/logo.jpg" alt="logo" width="100" height="100">
+            </div>
+
+            <!-- Navigation Menu -->
+            <div class="Welcome-anchortags">
+                <ul>
+                    <li><a href="./Welcomepage2.html">Home</a></li>
+                    <li><a href="./symptomschecker.html">Symptom Checker</a></li>
+                    <li><a href="./Hospitals.html">Hospitals</a></li>
+                    <li><a href="./Firstaid.html">First Aid</a></li>
+                    <li class="Welcome-navlinks"><a href="./Welcomepage.html"><i class="fas fa-user"></i>
+                    &nbsp; Log Out</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Area  -->
+    <main>
+
+        <!--  Section: Health Report Card  -->
+        <section class="report">
+            
+            <!-- Report Header -->
+            <header class="report_header">
+                <h1>Your Health Report <i class="fas fa-file-medical"></i></h1>
+                <marquee>
+                    <i class="fas fa-exclamation-triangle" style="color: #ffc107;"></i>
+                    Your health matters. This result offers guidance but is not a substitute for professional medical advice. Talk to a doctor if you feel unwell.
+                </marquee>
+            </header>
+
+            <!-- Report Body Content -->
+            <article class="report_body">
+
+                <!-- Summary of Report -->
+                <section class="summary">
+                    <p><strong>Possible Condition &nbsp; &nbsp;:</strong> Common Cold</p>
+                    <p><strong>Reported Symptoms :</strong> Fever, Cough</p>
+                    <p><strong>Symptom Duration &nbsp; &nbsp;:</strong> 1 day</p>
+                    <p><strong>Urgency Level &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp;:</strong> Low</p>
+                </section>
+
+                <!-- About the Disease -->
+                <section class="about_disease">
+                    <p>The common flu is a contagious respiratory illness caused by influenza viruses. It spreads easily from person to person through droplets when an infected person coughs, sneezes, or talks.</p>
+                    <a href="https://en.wikipedia.org/wiki/Common_cold" target="_blank">Know More About the Disease</a>
+                </section>
+
+                <!-- Suggested Tests -->
+                <section class="suggested_tests">
+                    <p><strong>Suggested Tests:</strong> Not required</p>
+                </section>
+
+                <!-- Diet Suggestion Button -->
+                <div class="buttons">
+                    <button><a href="./DietPage.html">Diet For Recovery</a></button>
+                </div>
+
+                <!-- Next Steps -->
+                <section class="next_steps">
+                    <h4>Next Steps</h4>
+                    <ul>
+                        <li>Monitor symptoms for 24 hours</li>
+                        <li>If symptoms worsen, reach out to a doctor!</li>
+                    </ul>
+                </section>
+
+                <!-- Final Action Buttons -->
+                <section class="buttons" id="last_buttons">
+                    <div class="hosp">
+                        <button><a href="./Hospitals.html">Reach Out to Nearby Hospitals</a></button>
+                    </div>
+                    <div class="down_report">
+                        <button>
+                            <a href="#"><i class="fas fa-download"></i> &nbsp; Download Health Report</a>
+                        </button>
+                    </div>
+                </section>
+
+            </article>
+        </section>
+
+        <!--  Aside: Image & Encouragement Quotes -->
+        <aside class="report_image">
+            <img src="./Images/istockphoto-2156028739-612x612.jpg" alt="Health recovery">
+            <div class="quote">
+                <p>"Wishing you a speedy recovery!"</p>
+                <p>"Take care and feel better soon."</p>
+            </div>
+        </aside>
+
+    </main>
+
+</body>
+</html>

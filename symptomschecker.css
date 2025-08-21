@@ -1,0 +1,229 @@
+/*  Universal Selector */
+/* Universal Selector */
+
+* {
+    margin-top: 0;
+}
+
+
+body {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/*  Navigation Bar (Header Section)  */
+.Welcome-navigation {
+    width: 100%;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #007BFF; /* Blue navigation background */
+    
+}
+
+.Welcome-logo img {
+    width: 100px;
+    height: 100px; /* Fixed size logo */
+}
+
+.Welcome-anchortags ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none; /* Remove default list styling */
+}
+
+.Welcome-anchortags ul li {
+    padding-right: 30px; /* Spacing between nav items */
+}
+
+.Welcome-anchortags ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+/* Navigation hover and focus effect */
+.Welcome-anchortags ul li a:focus,
+.Welcome-anchortags ul li a:focus-visible,
+.Welcome-anchortags ul li a:hover {
+    color: #003366;
+    transform: scale(1.15); /* Zoom on hover/focus */
+    padding: 5px 12px;
+    border-radius: 20px;
+    background-color: #E6F0FF;
+    outline: none;
+}
+
+
+/*  Main Content Layout*/
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px; /* Space around the content */
+}
+
+
+/* Symptom Checker Form Container  */
+.checker {
+    width: 600px;
+    height: 835px;
+    background-color: white;
+    border-radius: 35px;
+    box-shadow: 0px 0px 16px #465667;
+    margin: 50px 10px;
+    transition: 0.3s ease; /* Smooth hover effect */
+}
+
+/* On hover, enlarge slightly */
+.checker:hover {
+    width: 610px;
+    height: 840px;
+    box-shadow: 0px 0px 27px #465667;
+}
+
+
+/* Checker Heading (Blue title area)*/
+.checker_heading {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    font-family: "Edu SA Hand", cursive;
+    text-align: center;
+}
+
+.stetho {
+    font-size: 30px; /* Stethoscope icon size */
+}
+
+
+/*  Form Container  */
+.information {
+    padding: 20px;
+    color: #0056b3;
+    font-weight: 500;
+}
+
+
+/*  Form Labels  */
+.label_text {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+
+/*  Form Inputs Group (Checkboxes, Radios, Dropdowns)  */
+.user_input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: #003366;
+}
+
+
+/* Dropdowns and number input fields */
+select,
+input[type="number"] {
+    width: 100%;
+    padding: 8px 12px;
+    margin-top: 8px;
+    border-radius: 12px;
+    background-color: #E6F0FF;
+    color: #003366;
+    font-size: 17px;
+    border: 1px solid #003366;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Checkboxes and radio buttons */
+input[type="checkbox"],
+input[type="radio"] {
+    outline: none;
+}
+
+
+/*  Button Section  */
+.buttons {
+    display: flex;
+    margin-top: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit_but {
+    margin-right: 30px; /* Spacing between submit and reset */
+}
+
+/* Submit and Reset buttons */
+button {
+    padding: 10px 20px;
+    font-size: 17px;
+    background-color: #E6F0FF;
+    color: #003366;
+    border: 1px solid #003366;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px #465667;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: all 0.3s ease;
+}
+
+/* Button interaction */
+button:hover,
+button:focus,
+button:focus-visible {
+    background-color: #007BFF;
+    color: white;
+    font-size: 18px;
+    transform: scale(1.15);
+    outline: none;
+    box-shadow: 0px 0px 15px #465667;
+    border: white;
+}
+
+/* Anchor tags inside buttons */
+.buttons a {
+    text-decoration: none;
+    color: #003366;
+}
+
+button:hover a {
+    color: white;
+}
+
+
+/*  Doctor Image Section  */
+.doctor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 600px;
+    margin-left: 30px;
+}
+
+.doctor_img {
+    width: 500px;
+    height: 500px;
+    margin-top: 20px;
+}
+
+/* Motivational Quote */
+.quote {
+    margin-top: 30px;
+    text-align: center;
+      font-family: "Edu SA Hand", cursive;
+      text-shadow: 0px 0px 3px #007bff;
+}

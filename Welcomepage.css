@@ -1,0 +1,132 @@
+/* Universal Selector */
+* {
+    text-decoration: none;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* NAVIGATION BAR STYLES  */
+.Welcome-navigation {
+    width: 100%;
+    height: 95px;
+    display: flex;
+    position: relative;
+    background-color: #007BFF;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/* Navigation list item style */
+.Welcome-anchortags ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 30px;
+}
+
+/* Navigation unordered list layout */
+.Welcome-anchortags ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+}
+
+/* Navigation link styling */
+.Welcome-anchortags ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+/* Navigation link hover/focus effect */
+.Welcome-anchortags ul li a:focus,
+.Welcome-anchortags ul li a:focus-visible,
+.Welcome-anchortags ul li a:hover {
+    color: #003366;
+    transform: scale(1.15);
+    padding: 5px 12px;
+    border-radius: 20px;
+    background-color: #E6F0FF;
+    outline: none;
+}
+
+/* MAIN SECTION (WELCOME CONTENT)  */
+.Welcome-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+/*  IMAGE SECTION */
+.Welcome-image {
+    flex: 1;
+}
+
+/* Image inside the Welcome section */
+.Welcome-image img {
+    width: 100%;
+    min-height: 90vh;
+    min-width: 70vh;
+}
+
+/*  TEXT + BUTTON SECTION  */
+.Welcome-matter {
+    flex: 1;
+    min-width: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Title: HealthHub */
+.Welcome-title {
+    font-size: 75px;
+    font-family: "Edu SA Hand", cursive !important;
+    color: #007BFF;
+    text-shadow: 3.5px 3.5px 4px gray;
+    font-weight: bold;
+}
+
+/* Slogan line */
+.Welcome-slogan {
+    font-size: 30px;
+}
+
+/* Description paragraph */
+.Welcome-content {
+    font-size: 13px;
+    line-height: 17px;
+    letter-spacing: 2px;
+}
+
+/*  BUTTON STYLES */
+.Welcome-account {
+    font-size: 15px;
+    width: 150px;
+    height: 40px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Button focus and active states */
+button:active,
+button:focus,
+button:focus:focus-visible {
+    background-color: #4676aa;
+    outline: none;
+}
+
+/* Create Account button link styling */
+.Welcome-accountlink {
+    color: white;
+}

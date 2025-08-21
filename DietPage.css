@@ -1,0 +1,206 @@
+/*  Navigation Bar (Header Section)  */
+
+
+
+.Welcome-navigation {
+    width: 100%;
+    height: 95px;
+    display: flex;
+    position: relative;
+    background-color: #007BFF;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+.Welcome-logo img {
+    width: 100px;
+    height: 100px; /* Fixed size logo */
+}
+
+/* Navigation list item style */
+.Welcome-anchortags ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 30px;
+}
+
+/* Navigation unordered list layout */
+.Welcome-anchortags ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+}
+
+/* Navigation link styling */
+.Welcome-anchortags ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+/* Navigation hover and focus effect */
+.Welcome-anchortags ul li a:focus,
+.Welcome-anchortags ul li a:focus-visible,
+.Welcome-anchortags ul li a:hover {
+    color: #003366;
+    transform: scale(1.15); /* Zoom on hover/focus */
+    padding: 5px 12px;
+    border-radius: 20px;
+    background-color: #E6F0FF;
+    outline: none;
+}
+
+  input[type="text"] {
+      width: 300px;
+      padding: 10px 40px 10px 15px;
+      border-radius: 25px;
+      border: 1px solid #007BFF;
+      outline: none;
+      font-size: 16px;  
+      text-align:center;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+.diet-page-header {
+  background-color:#fff;
+  text-align:center;
+   background-color:#E6F0FF;
+  padding: 40px 20px 20px;
+   font-family: "Edu SA Hand", cursive;
+}
+
+.diet-page-header h3 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #007BFF;
+   background-color:#E6F0FF;
+  text-align: center;
+   font-family: "Edu SA Hand", cursive;
+}
+
+.diet-quote {
+  font-size: 1.3rem;
+  color: #007BFF;
+  margin-top: 2px;
+  padding: 8px;
+  text-align: center;
+   font-family: "Edu SA Hand", cursive;
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color:#E6F0FF;
+  color: #333;
+  padding: 0;
+  letter-spacing: 1px;
+  line-height:1.2;
+}
+h2{
+  font-size:25px;
+  font-family: "Edu SA Hand", cursive;
+}
+
+
+.diet-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 80px;
+  padding: 40px;
+  max-width: 1400px;
+  max-height: 1000px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  box-shadow: 4px 4px 10px 5px rgba(96,153,202,0.3);
+  justify-items: center;
+}
+
+
+.diet-image-block {
+  position: relative;
+  box-shadow: 4px 4px 10px 5px rgba(96, 153, 202, 0.7);
+}
+
+
+.diet-image-block input[type="checkbox"] {
+  display: none;
+}
+
+.diet-image-block img {
+  width: 100%;
+  height: 250px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+.diet-image-block img:hover {
+  transform: scale(1.05);
+}
+
+
+.diet-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.diet-image-block input[type="checkbox"]:checked ~ .diet-popup {
+  display: flex;
+}
+
+.diet-popup-content {
+  background-image: linear-gradient(to right,#E6F0FF,#7da9eb);
+  padding: 25px 30px;
+  max-width: 500px;
+  height: 700px;
+  width: 90%;
+  border-radius: 12px;
+  position: relative;
+}
+.diet-popup-content h2{
+  font-family: "Edu SA Hand", cursive;
+}
+.diet-popup-content h3 p{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.diet-close-btn {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  font-size: 24px;
+  color: #888;
+  cursor: pointer;
+}
+
+.diet-close-btn:hover {
+  color: rgb(227, 94, 94);
+}
+
+.diet-popup-content h2 {
+  margin-bottom: 10px;
+}
+
+.diet-popup-content p {
+  font-size: 1rem;
+  color: #444;
+}

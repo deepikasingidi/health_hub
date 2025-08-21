@@ -1,0 +1,242 @@
+/* Reset default margins and paddings, set box-sizing for consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base font for the body */
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Header container styling */
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: #e9f3f5;
+  width: 100%;
+  font-family: "Edu SA Hand", cursive;
+  justify-content: space-around;
+}
+
+/* Main heading layout */
+.main_heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Repeated key removed */
+  align-items: center;
+}
+
+/* Text within header */
+.head-text {
+  text-align: center;
+}
+
+/* Home link or icon */
+.home {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0056b3;
+  cursor: pointer;
+  padding-top: 20px;
+}
+
+/* Home paragraph styling */
+.home-p {
+  font-size: 23px;
+  font-weight: bold;
+  color: #0056b3;
+  padding: 5px 2px;
+  cursor: pointer;
+}
+
+/* Hover effect for home paragraph */
+.home-p:hover {
+  color: white;
+  background-color: #007BFF;
+  border-radius: 10px;
+}
+
+/* Header content section (image and title) */
+.head-content {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #e9f3f5;
+}
+
+/* Styling the header image */
+.head-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  border: 4px solid #e0f1f4;
+}
+
+/* Main heading style */
+h2 {
+
+  font-size: 50px;
+  letter-spacing: -2px;
+  color: #007BFF;
+  margin-bottom: 2px;
+}
+
+/* Paragraph text style */
+p {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  color: #007BFF;
+}
+
+/* Navigation bar styling */
+.nav {
+  background-color: #e9f3f5;
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #edf4fb;
+  margin-bottom: 50px;
+  font-family: "Edu SA Hand", cursive;
+}
+
+/* Navigation links */
+.nav a, button a {
+  font-size: 20px;
+  color: #0056b3;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-weight: bold;
+}
+
+/* Hover and focus effects for nav links */
+.nav a:hover,
+.nav a:focus,
+.nav a:focus-visible,
+button a:hover {
+  color: white;
+  background-color: #007BFF;
+  border-radius: 10px;
+  outline: none;
+}
+
+/* Main content container */
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 20px;
+  column-gap: 30px;
+  justify-content: space-around;
+}
+
+/* Error message box */
+.error {
+  border-left: 20px solid #f8d7da;
+  border-right: 1px solid #f8d7da;
+  border-bottom: 1px solid #f8d7da;
+  border-top: 0.5px solid #f8d7da;
+  border-radius: 10px;
+}
+
+/* Warning message box */
+.warning {
+  border-left: 20px solid #f5e6b4;
+  border-radius: 10px;
+  border-right: 1px solid #f5e6b4;
+  border-bottom: 1px solid #f5e6b4;
+  border-top: 1px solid #f5e6b4;
+}
+
+/* Primary message box */
+.primary-light {
+  border-left: 20px solid #d6e3f8;
+  border-radius: 10px;
+  border-right: 1px solid #d6e3f8;
+  border-bottom: 1px solid #d6e3f8;
+  border-top: 1px solid #d6e3f8;
+}
+
+/* List style */
+.lists {
+  list-style: none;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+}
+
+/* Shared card-like styling */
+.styling {
+  margin-bottom: 30px;
+  width: 570px;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+/* Section title style */
+h4 {
+  font-size: 30px;
+  color: #003366;
+  line-height: 1.7;
+  font-family: "Edu SA Hand", cursive;
+}
+
+/* Footer general style */
+footer {
+  font-size: 12px;
+  margin: 20px;
+}
+
+/* Footer text style */
+.footer-style {
+  font-size: 12px;
+  color: black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Hover effects for error box */
+.error:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #f8d7da;
+  cursor: pointer;
+}
+
+/* Hover effects for warning box */
+.warning:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #f5e6b4;
+  cursor: pointer;
+}
+
+/* Hover effects for primary box */
+.primary-light:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #d6e3f8;
+  cursor: pointer;
+}
+
+/* General button styling */
+button {
+  padding: 10px 20px;
+  font-size: 17px;
+  background-color: #E6F0FF;
+  color: #003366;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+  font-family: "Edu SA Hand", cursive;
+}

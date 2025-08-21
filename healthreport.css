@@ -1,0 +1,173 @@
+/*  Base Styles  */
+body {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+/*  Navigation Bar  */
+.Welcome-navigation {
+    width: 100%;
+    height: 95px;
+    display: flex;
+    position: relative;
+    background-color: #007BFF;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/* Navigation Links */
+.Welcome-anchortags ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+}
+
+.Welcome-anchortags ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 30px;
+}
+
+.Welcome-anchortags ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Navigation Link Hover/Focus Effects */
+.Welcome-anchortags ul li a:focus,
+.Welcome-anchortags ul li a:focus-visible,
+.Welcome-anchortags ul li a:hover {
+    color: #003366;
+    transform: scale(1.15);
+    padding: 3px 12px;
+    border-radius: 20px;
+    background-color: #E6F0FF;
+    outline: none;
+}
+
+/*  Main Layout  */
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/*  Report Card Section  */
+.report {
+    width: 650px;
+    box-shadow: 0px 0px 16px #465667;
+    background-color: #E6F0FF;
+    border-radius: 35px;
+    margin: 50px 10px 0 10px;
+    color: #003366;
+}
+
+.report:hover {
+    box-shadow: 0px 0px 25px #465667;
+}
+
+/* Report Header */
+.report_header {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    font-family: "Edu SA Hand", cursive;
+}
+
+/* Report Body */
+.report_body {
+    padding: 0 50px;
+    height: 740px;
+    background-color: #E6F0FF;
+    border-radius: 50px;
+}
+
+/* Disease Info Link */
+.about_disease a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+/*  Buttons  */
+button {
+    padding: 10px 20px;
+    font-size: 17px;
+    background-color: #E6F0FF;
+    color: #003366;
+    border: 1px solid #003366;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #465667;
+    margin: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.buttons a {
+    text-decoration: none;
+    color: #003366;
+}
+
+/* Button Hover/Focus Effects */
+button:hover,
+button:focus,
+button:focus-visible {
+    background-color: #007BFF;
+    color: white;
+    font-size: 18px;
+    transform: scale(1.15);
+    outline: none;
+    box-shadow: 0px 0px 15px #465667;
+    border: white;
+}
+
+button:hover a,
+button:focus a,
+button:focus-visible a {
+    color: white;
+}
+
+/*  Marquee Banner  */
+marquee {
+    font-size: 25px;
+}
+
+/*  Report Image & Quotes  */
+.report_image {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.report_image img {
+    height: 500px;
+}
+
+.report_image p {
+    font-size: 25px;
+    color: #003366;
+}
+
+.quote:hover {
+    text-shadow: 0px 0px 3px #007bff;
+}
+
+/*  Accessibility Fixes  */
+a:focus,
+.hosp:focus,
+.down_report {
+    outline: none;
+}
